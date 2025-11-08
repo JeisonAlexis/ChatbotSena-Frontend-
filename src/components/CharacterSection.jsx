@@ -18,7 +18,6 @@ function CharacterSection() {
     "¿En que casos no me puedo inscribir en el SENA?",
   ];
 
-  // --- Función principal para enviar pregunta ---
   const sendQuestionToBot = async (question) => {
     if (!window.botpress || !window.botpress.sendMessage) {
       console.warn("⚠️ Botpress aún no está listo.");
@@ -26,7 +25,6 @@ function CharacterSection() {
     }
 
     try {
-      // Si la conversación es nueva, primero enviamos "Hola"
       if (!hasStartedConversation) {
         console.log(
           "🟢 Nueva conversación detectada. Enviando saludo inicial..."
@@ -34,7 +32,6 @@ function CharacterSection() {
         await window.botpress.sendMessage("Hola");
         setHasStartedConversation(true);
 
-        // Esperar la primera respuesta antes de enviar la pregunta
         const waitForReply = new Promise((resolve) => {
           const listener = (event) => {
             if (event.detail?.type === "message") {
@@ -46,14 +43,12 @@ function CharacterSection() {
           window.addEventListener("message", listener);
         });
 
-        // Esperamos que el bot conteste (máximo 5s)
         await Promise.race([
           waitForReply,
           new Promise((r) => setTimeout(r, 5000)),
         ]);
       }
 
-      // Ahora enviamos la pregunta frecuente
       await window.botpress.sendMessage(question);
       window.botpress.open();
       console.log("📤 Pregunta enviada al chatbot:", question);
@@ -62,7 +57,6 @@ function CharacterSection() {
     }
   };
 
-  // --- Detectar si Botpress ya está listo ---
   useEffect(() => {
     const waitForBotpress = setInterval(() => {
       if (

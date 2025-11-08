@@ -41,9 +41,7 @@
   padding: 1.5rem;
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  /*
-  max-width: 350px;
-  */
+
 }
 
 .welcome-message h2 {
@@ -65,7 +63,6 @@
   }
 }
 
-/* ===== SECCIÓN FAQ MEJORADA ===== */
 
 .faq-section {
   margin-top: 20px;
@@ -100,7 +97,6 @@
   margin: 8px auto 0;
 }
 
-/* Contenedor grid para las preguntas */
 .faq-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -113,7 +109,6 @@
   }
 }
 
-/* Estilo individual para cada pregunta */
 .faq-question {
   background: white;
   border: none;
@@ -147,7 +142,6 @@
   transform: scale(1.1);
 }
 
-/* Estado deshabilitado */
 .faq-question:disabled {
   opacity: 0.6;
   cursor: not-allowed;

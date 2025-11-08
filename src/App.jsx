@@ -27,7 +27,7 @@ function App() {
         {/* SECCIÓN IZQUIERDA */}
         <div
           style={{
-            flex: "0 0 40%",
+            flex: "0 0 45%",
             background: "linear-gradient(180deg, #eaf4ff 0%, #ffffff 100%)",
             padding: "30px",
             display: "flex",
@@ -42,7 +42,7 @@ function App() {
         {/* SECCIÓN DERECHA (CHAT) */}
         <div
           style={{
-            flex: "0 0 60%",
+            flex: "0 0 55%",
             height: "100%",
             position: "relative",
           }}

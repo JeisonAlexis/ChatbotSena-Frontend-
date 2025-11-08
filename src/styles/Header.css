@@ -29,7 +29,6 @@ header {
   gap: 1rem;
 }
 
-/* Estilo del contenedor del logo */
 .logo {
   width: 60px;
   height: 60px;
@@ -53,7 +52,6 @@ header {
   object-fit: contain;
 }
 
-/* Títulos del header */
 .header-text h1 {
   font-size: 1.6rem;
   color: #2d3748;
@@ -68,7 +66,6 @@ header {
   font-weight: 500;
 }
 
-/* Indicador de estado */
 .status-indicator {
   display: flex;
   align-items: center;
@@ -93,13 +90,11 @@ header {
   font-weight: 600;
 }
 
-/* Animaciones */
 @keyframes blink {
   0%, 50% { opacity: 1; }
   51%, 100% { opacity: 0.4; }
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .header-content {
     flex-direction: column;

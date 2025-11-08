@@ -2,7 +2,6 @@ import React, { useEffect } from "react"
 
 export default function BotpressChat() {
   useEffect(() => {
-    // Si ya está cargado, no repetir
     if (window.botpress && window.botpress.sendMessage) return
 
     const injectScript = document.createElement("script")
@@ -17,13 +16,13 @@ export default function BotpressChat() {
           console.log("🚀 Inicializando Botpress...")
 
           window.botpress.init({
-            botId: "252b29c0-5c1d-4166-9026-29c04c65e0de",
-            clientId: "b6cb02cd-8f24-424e-bfa6-c0bf5037575f",
+            botId: "x",
+            clientId: "x",
             configuration: {
               version: "v2",
               composerPlaceholder: "Saluda y escribe tu pregunta",
               botName: "Chatbot Administrativo del SENA",
-              botAvatar: "https://files.bpcontent.cloud/2025/11/03/14/20251103142032-UGYT9QZ0.png",
+              botAvatar: "x",
               botDescription: "Asistente Administrativo del SENA",
               color: "#31eb54",
               variant: "solid",
@@ -34,7 +33,6 @@ export default function BotpressChat() {
               feedbackEnabled: false,
               footer: "Dev: Jeison Alexis R.A.",
               hideWidget: false,
-              // Configuraciones específicas para embedded
               embeddedChatId: "bp-embedded-webchat",
               soundEnabled: false,
               proactiveMessageEnabled: false,
@@ -44,17 +42,16 @@ export default function BotpressChat() {
             }
           })
 
-          // Esperar a que esté listo
+          
           window.botpress.on("webchat:ready", () => {
             console.log("✅ Botpress completamente listo y funcionando.")
-            // No abrir automáticamente si está embedido
-            // window.botpress.open()
+            
           })
         }
       }, 500)
     }
 
-    // Cleanup function
+    
     return () => {
       if (window.botpress) {
         window.botpress.destroy()
@@ -64,7 +61,7 @@ export default function BotpressChat() {
 
   return (
     <div
-      id="bp-embedded-webchat" // Cambiado para coincidir con embeddedChatId
+      id="bp-embedded-webchat" 
       style={{
         width: "100%",
         height: "100%",

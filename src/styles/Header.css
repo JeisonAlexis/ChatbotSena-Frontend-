@@ -1,0 +1,123 @@
+header {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.95),
+    rgba(250, 250, 250, 0.85)
+  );
+  backdrop-filter: blur(12px);
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  border-bottom: 3px solid rgba(72, 187, 120, 0.3); /* Verde SENA */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Estilo del contenedor del logo */
+.logo {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #ff7a00 0%, #ffb347 100%);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 15px rgba(255, 122, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 122, 0, 0.5);
+}
+
+.logo-image {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+
+/* Títulos del header */
+.header-text h1 {
+  font-size: 1.6rem;
+  color: #2d3748;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.5px;
+}
+
+.header-text p {
+  font-size: 0.9rem;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+/* Indicador de estado */
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(72, 187, 120, 0.1);
+  padding: 0.4rem 0.8rem;
+  border-radius: 30px;
+  box-shadow: 0 2px 8px rgba(72, 187, 120, 0.2);
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  background: #48bb78;
+  border-radius: 50%;
+  animation: blink 2s infinite;
+}
+
+.status-indicator span {
+  font-size: 0.875rem;
+  color: #38a169;
+  font-weight: 600;
+}
+
+/* Animaciones */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0.4; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 0.75rem;
+  }
+
+  .header-text h1 {
+    font-size: 1.3rem;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .status-indicator {
+    align-self: flex-end;
+  }
+}

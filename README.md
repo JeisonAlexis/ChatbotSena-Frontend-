@@ -1,16 +1,71 @@
-# React + Vite
+# 🤖 Chatbot Administrativo Virtual SENA — Frontend Web 💬
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interfaz web desarrollada en **React + Vite** para la interacción directa con un **Chatbot Asistente Administrativo Virtual del SENA**, conectado a **Botpress Cloud** mediante un widget embebido en tiempo real.
 
-Currently, two official plugins are available:
+El sistema permite a los usuarios consultar información académica, administrativa e institucional del SENA a través de una experiencia conversacional moderna e intuitiva.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Proyecto desarrollado como parte de la formación **Tecnologo ADSO — Análisis y Desarrollo de Software del SENA**.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧠 Funcionalidades Principales
 
-## Expanding the ESLint configuration
+- 💬 Integración directa con Botpress Cloud
+- ⚛️ Frontend moderno con React + Vite
+- 🎨 Diseño moduralizado
+- 🤖 Interaccion fluida y directa
+- 🌍 Interfaz intuitiva
+- 🔗 Comunicación con backend scraping API a través de Botpress
+- ⚡ Carga rápida gracias a Vite
+- 🧩 Componentes reutilizables
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tecnologías Utilizadas
+
+- React
+- Vite
+- JavaScript (ES6+)
+- CSS3
+- Botpress Webchat
+- HTML5
+
+---
+
+## 📊 Arquitectura General
+
+Usuario  
+⬇  
+Frontend React + Vite  
+⬇  
+Botpress Cloud  
+⬇  
+Backend Scraping API  
+⬇  
+Páginas Oficiales SENA  
+
+---
+
+
+## 🖥️ Diseño de la Interfaz
+
+El sistema cuenta con dos secciones principales:
+
+### 🧍 Sección Izquierda
+
+- Información visual del asistente
+- Diseño institucional SENA
+- Preguntas frecuentes de acceso rapido
+
+### 💬 Sección Derecha
+
+- Chat en tiempo real con Botpress
+- Webchat embebido
+- Estilos personalizados
+- Iframe expandido al 100%
+
+---
+
+
+
+

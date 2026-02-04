@@ -67,5 +67,31 @@ El sistema cuenta con dos secciones principales:
 ---
 
 
+## 🚀 Instalación y Uso
+
+### 1️⃣ Clonar repositorio
+
+```bash
+git clone URL_DEL_REPOSITORIO
+cd frontend-chatbot-sena
+```
+
+### 2️⃣ Instalar dependencias
+
+```bash
+npm install
+```
+
+### 3️⃣ Ejecutar entorno de desarrollo
+
+```bash
+npm run dev
+```
+
+### Servidor local:
+
+```bash
+http://localhost:5173
+```
 
 

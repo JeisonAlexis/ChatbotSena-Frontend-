@@ -94,4 +94,8 @@ npm run dev
 http://localhost:5173
 ```
 
+**Autor**
+- Jeison Alexis Rodriguez Angarita 🙍‍♂️
+- Proyecto Productivo / Tecnologo ADSO (Analisis y Desarrollo de Software / SENA 👨‍🎓
+- 2025 📅 
 

@@ -70,18 +70,18 @@ El sistema cuenta con dos secciones principales:
 
 - Home
 <div align="center">
-  <img src="images/1.png" width="500" />
+  <img src="images/1.png" width="400" />
 </div>
 
 - Pregunta frecuente de acceso rapido
 <div align="center">
-  <img src="images/2.png" width="500" />
-  <img src="images/3.png" width="500" />
+  <img src="images/2.png" width="400" />
+  <img src="images/3.png" width="400" />
 </div>
 
 - Visual de la multimedia a traves de la interfaz
 <div align="center">
-  <img src="images/4.png" width="500" />
+  <img src="images/4.png" width="400" />
 </div>
 
 ---
